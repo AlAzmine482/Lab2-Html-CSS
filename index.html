@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+    <meta charset="utf-8">
+    <title>About me</title>
+    <link rel = "stylesheet" type = "text/css" href ="lab2.css">
+    <link rel = "form" type = "text/JavaScript" href = "lab2.js">
+</head>
+<body>
+<div class = "container">
+<img src = "/Users/alhelal/Desktop/484 git/lab-1/lab-1-html-and-css-AlAzmine/Assest/card-0-3.png" width =  "150" height = "200" 
+ alt = " A photo of me" /> 
+ <div class = "info">
+<h1 id= "Name"><u>Al Azmine</u></h1>
+
+<h2 id = csunid> 109945548 </h2>
+<h2 id = major> Computer Science </h2>
+ </div>
+</div>
+<table border = "1" >
+<thead>
+<tr>
+    <b><th> Class Number</th></b>
+    <b><th> Class Name </th></b>
+    <b><th> Professor Name </th> </b>
+    <b><th> Day of Class</th> </b>
+    <b><th> Time of Class</th> </b>
+    <b><th> Location of Class </th></b>
+</tr>
+</b>
+</thead>
+<tbody>
+    <tr>
+        <td> 21291 </td>
+        <td> COMP NETWRK SFTWR </td>
+        <td> <a href = https://academics.csun.edu/faculty/senhua.yu> Senhua Yu </a> </td>
+        <td> Fr </td>
+        <td> 7:00PM - 9:45PM </td>
+        <td> Online Class </td>
+    </tr>
+    <tr>
+        <td> 21348 </td>
+        <td> MULTIMEDIA SYSTEM </td>
+        <td> <a href = https://academics.csun.edu/faculty/kevin.chaja > Kevin Chaja </a> </td>
+        <td> Mo </td>
+        <td> 7:00PM - 9:45PM </td>
+        <td> Online Class </td>
+    </tr> 
+    <tr>
+        <td> 16747 </td>
+        <td> WEB ENGR I </td>
+        <td> <a href = https://academics.csun.edu/faculty/ilia.benson> Ilia Benson </a> </td>
+        <td> TuTh </td>
+        <td> 6:00PM - 6:50PM </td>
+        <td> Jacaranda 1538 </td>
+    </tr>
+    <tr>
+        <td> 16748 </td>
+        <td> WEB ENGR I LAB </td>
+        <td> <a href = https://academics.csun.edu/faculty/ilia.benson> Ilia Benson </a> </td>
+        <td> TuTh </td>
+        <td> 7:00PM - 8:15PM </td>
+        <td> Jacaranda 1538 </td>
+    </tr>
+    <tr>
+        <td> 17065 </td>
+        <td> HUM-COMP INTERACT </td>
+        <td> <a href =  https://academics.csun.edu/faculty/mohammed.abdelrahim> Mohammed Abdelrahim </a> </td>
+        <td> Fr </td>
+        <td> 8:00AM - 10:45AM </td>
+        <td> Jacaranda 3508 </td>
+    </tr>
+    <tr>
+        <td> 16890 </td>
+        <td> SR PROJECT LAB </td>
+        <td> <a href = https://academics.csun.edu/faculty/afshin.amini> Afshin Amini </a> </td>
+        <td> TuTh </td>
+        <td> 11:30AM - 12:45PM </td>
+        <td> Jacaranda 2217 </td>
+    </tr>
+    <tr>
+        <td> 21330 </td>
+        <td> DATA MINING</td>
+        <td> <a href = https://academics.csun.edu/faculty/vanessa.klotzman> Vanessa Klotzman</a> </td>
+        <td> TuTh </td>
+        <td> 2:00PM - 4:45PM </td>
+        <td> Online Class </td>
+    </tr>
+</tbody>
+</table>
+<div> <h3 id = "para">Paragraph </h3> <p> 
+    
+    I choose these classes because they interest me and improve my coding skills. At the beginning of the semester I only had about 4 classes including the senior project design. Fortunately, I was able to join 2 other classes in order to qualify for graduation. 
+    My career goals after I graduate is that I want to become a software engineer. I'm currently working on my resume for internships. 
+
+</p></div>
+<form id = "myForm">
+<p>
+    <label> Name(Letters only): <br>
+     <input type = "text" size = "25" maxlength="20" id = "inputname" pattern  = "{[A-Za-z]}" onkeyup="nameup()" >
+     <span id="name-error" style="color: red;"></span>
+    </label>
+   
+</p>
+<p>
+<label> Date(MM/DD/year):<br>
+    <input type = "text" size = "25" maxlength = "20" id  = "date" placeholder=" MM/DD/YYYY" oninput="datecheck()" >
+    <span id="date-error" style="color: red;"></span>
+</label>
+
+</p>
+<table class = "calculator" id = "calcu">
+    <tr>
+        <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+        <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="1" onclick="display('1')" /> </td>
+        <td> <input type="button" value="2" onclick="display('2')" /> </td>
+        <td> <input type="button" value="3" onclick="display('3')"   /> </td>
+        <td> <input type="button" value="/"  onclick="divide()" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="4" onclick="display('4')"  /> </td>
+        <td> <input type="button" value="5" onclick="display('5')"  /> </td>
+        <td> <input type="button" value="6" onclick="display('6')"  /> </td>
+        <td> <input type="button" value="-" onclick="subtract()" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="7" onclick="display('7')"  /> </td>
+        <td> <input type="button" value="8" onclick="display('8')"   /> </td>
+        <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        <td> <input type="button" value="+" onclick="add()"/> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="." onclick="display('.')"   /> </td>
+        <td> <input type="button" value="0" onclick="display('0')"  /> </td>    
+        <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+        <td> <input type="button" value="*" onclick = "multiply()"  /> </td>
+      
+    </tr>
+    </table>
+
+    
+    <p><button onclick = "saveButton(event)">Save</button></p>
+    <p id = "hoursWorkedResult"> <label> Hours Worked This Week:
+    <span id="hours-error" ></span>
+     </label> </p> 
+
+    <p><button onclick = "submitButton(event)"> Submit</button></p>
+    <script type="text/javascript" src="lab2.js"></script>
+</form>
+</body>
+</html>
